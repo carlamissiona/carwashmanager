@@ -18,8 +18,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-
-    url(r'^api/', include('conduit.apps.articles.urls', namespace='articles')),
-    url(r'^api/', include('conduit.apps.authentication.urls', namespace='authentication')),
-    url(r'^api/', include('conduit.apps.profiles.urls', namespace='profiles')),
+    
 ]
