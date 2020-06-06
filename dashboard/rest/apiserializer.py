@@ -1,10 +1,9 @@
 from rest_framework import serializers
+from dashboard.models import User, StockItem, Sales
 
-from dashboard.models import Users, StockItem, Sales
-
-class UsersSerializer(serializers.HyperlinkedModelSerializer):
+class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Users
+        model = User
         fields = ('username', 'password','email', 'firstname','lastname', 'country',   )
 
 class StockItemSerializer(serializers.HyperlinkedModelSerializer):
