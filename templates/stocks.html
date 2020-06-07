@@ -1,0 +1,61 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+ <div id="base-child">
+    <main class="hoc container clear"> 
+      <!-- main body -->
+      <!-- ################################################################################################ -->
+      <div class="content"> 
+           <div class="scrollable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Delete</th>
+                  <th>Name</th>
+                  <th>Qty</th> 
+                  <th>Date</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for inventory in stocks %}
+                 <tr> 
+                  <td>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="stockitem/delete/{{ inventory.id }}"> Delete</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="stockitem/edit/{{ inventory.id }}"> Edit </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="stockitem/add/{{ inventory.id }}"> Add </a>
+                  </td>
+                  <td>{{ inventory.name }}</td>
+                  <td>{{ inventory.qty }}</td> 
+                  <td>{{ inventory.pub_date }}</td>
+                  <td>  
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a  href="/sales/{{inventory.id}}" >
+                      <button type="button" class="btn btn-primary btn-xxs">   
+                         View 
+                      </button> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a  href="/print/{{inventory.id}}" > <button type="button" class="btn btn-secondary btn-xxs">   
+                         Print 
+                      </button></a>
+                          
+
+                    </p>
+                  
+                  </td>
+                 
+                </tr> 
+                     
+                {% endfor %}
+                 
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </main>
+ </div>
+
+    
+{% endblock %}

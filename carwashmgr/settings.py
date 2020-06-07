@@ -130,3 +130,35 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "templates"),
 )
 
+
+
+# DataFlair #Logging Information
+LOGGING = {
+    'version': 1,
+    # Version of logging
+    'disable_existing_loggers': False,
+    #disable logging 
+    # Handlers #############################################################
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'dataflair-debug.log',
+        },
+########################################################################
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    # Loggers ####################################################################
+    'loggers': {
+       '': {
+            'level': 'DEBUG',
+            'handlers': ['console', 'file']
+        },
+        'django.request': {
+            'level': 'DEBUG',
+            'handlers': ['console', 'file']
+        }
+    },
+}

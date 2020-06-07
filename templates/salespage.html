@@ -1,0 +1,44 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+ <div id="base-child">
+    <main class="hoc container clear"> 
+      <!-- main body -->
+      <!-- ################################################################################################ -->
+      <div class="content"> 
+          <h1>Sales </h1>
+    
+              <form action="#" method=" ">
+                <div class="one_half first">
+                  <label for="name">Qty <span>*</span></label>
+                  <input type="text" readonly value={{ sales.car_qty }} disabled="true" >{{sales.car_qty }} </input>
+                </div>  
+                <div class="one_half first">
+                  <label for="name">Service <span>*</span></label>
+                  <input type="text" readonly value={{ sales.service }} disabled="true"> {{ sales.service }} </input>
+                </div>
+                <div class="one_half first">
+                  <label for="name">Staff <span>*</span></label>
+                  <input type="text" readonly value={{ sales.staff }} disabled="true" > {{ sales.staff }} </input>
+                </div>
+                <div class="one_half first">
+                  <label for="name">Sale Amount <span>*</span></label>
+                  <input type="text" readonly value={{ sales.sale_amount }} disabled="true" > {{ sales.sale_amount }} </input>
+                </div>
+                 <div class="block clear">  
+                   <a  href="/print/{{ sales.id }}" > <button type="button" class="btn btn-secondary btn-xs">   
+                         Print 
+                  </button></a>  
+                  <a  href="/sales" > <button type="button" class="btn btn-secondary btn-xs">   
+                         All Sales 
+                  </button></a>
+               </div>
+              </form>
+      </div>
+    </main>
+ </div>
+
+    
+{% endblock %}

@@ -1,0 +1,58 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+ <div id="base-child">
+    <main class="hoc container clear"> 
+      <!-- main body -->
+      <!-- ################################################################################################ -->
+      <div class="content"> 
+           <div class="scrollable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Staff</th>
+                  <th>Qty</th>
+                  <th>Sale Amount</th>
+                  <th>Service</th>
+                  <th>Date</th>
+                  <th>View</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for sale in sales %}
+                 <tr> 
+                  <td><a href="#">{{ sale.staff }}</a></td>
+                  <td>{{ sale.car_qty }}</td>
+                  <td>{{ sale.sale_amount }}</td>
+                  <td>{{ sale.service }}</td>
+                  <td>{{ sale.pub_date }}</td>
+                  <td>  
+                    <p>
+                      <a  href="/sales/{{sale.id}}" >
+                      <button type="button" class="btn btn-primary btn-xxs">   
+                         View 
+                      </button> </a> 
+                      <a  href="/print/{{sale.id}}" > <button type="button" class="btn btn-secondary btn-xxs">   
+                         Print 
+                      </button></a>
+                          
+
+                    </p>
+                  
+                  </td>
+                 
+                </tr> 
+                     
+                {% endfor %}
+                 
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </main>
+ </div>
+
+    
+{% endblock %}

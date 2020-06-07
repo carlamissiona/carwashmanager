@@ -4,10 +4,7 @@ from . import views
 
 from rest_framework import routers
 from .rest import api 
-
-
-
-
+ 
 router = routers.DefaultRouter()
 router.register(r'/sale', api.SaleViewSet)
 router.register(r'/stockitem', api.StockItemViewSet)
@@ -16,6 +13,9 @@ router.register(r'/user', api.UserViewSet)
 urlpatterns = [
 
     path('', views.indexpage),
+    path('sales', views.listsalespage),
+    path('inventory', views.stockspage),
+    path('sales/<int:salesid>', views.salespage),
     # path('login', views.login),
     
     # path('api',  include(router.urls)),
