@@ -56,3 +56,405 @@ Not Found: /sales/12
 Not Found: /sales/12
 Using proactor: IocpProactor
 Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\views.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\views.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Not Found: /sales/12
+Not Found: /sales/12
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /sales/images/demo/backgrounds/01.png
+Not Found: /sales/images/demo/backgrounds/01.png
+Not Found: /sales/images/demo/backgrounds/02.png
+Not Found: /sales/images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Internal Server Error: /inventory
+Traceback (most recent call last):
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\missi\app-portfolio\carwashmgr\dashboard\views.py", line 30, in stockspage
+    agent_activity.delay( 'suer user', 'All', 'Read operation' )
+  File "C:\Program Files\Python38-32\lib\site-packages\celery\app\task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "C:\Program Files\Python38-32\lib\site-packages\celery\app\task.py", line 530, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: agent_activity() missing 1 required positional argument: 'operation'
+Internal Server Error: /inventory
+Traceback (most recent call last):
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\missi\app-portfolio\carwashmgr\dashboard\views.py", line 30, in stockspage
+    agent_activity.delay( 'suer user', 'All', 'Read operation' )
+  File "C:\Program Files\Python38-32\lib\site-packages\celery\app\task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "C:\Program Files\Python38-32\lib\site-packages\celery\app\task.py", line 530, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: agent_activity() missing 1 required positional argument: 'operation'
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\views.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\views.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Internal Server Error: /inventory
+Traceback (most recent call last):
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\missi\app-portfolio\carwashmgr\dashboard\views.py", line 30, in stockspage
+    agent_activity.delay( self ,'super user', 'All', 'Read operation' )
+NameError: name 'self' is not defined
+Internal Server Error: /inventory
+Traceback (most recent call last):
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\missi\app-portfolio\carwashmgr\dashboard\views.py", line 30, in stockspage
+    agent_activity.delay( self ,'super user', 'All', 'Read operation' )
+NameError: name 'self' is not defined
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\views.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Internal Server Error: /inventory
+Traceback (most recent call last):
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\missi\app-portfolio\carwashmgr\dashboard\views.py", line 30, in stockspage
+    agent_activity.delay( 'super user', 'All', 'Read operation' )
+  File "C:\Program Files\Python38-32\lib\site-packages\celery\app\task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "C:\Program Files\Python38-32\lib\site-packages\celery\app\task.py", line 530, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: agent_activity() missing 1 required positional argument: 'operation'
+Internal Server Error: /inventory
+Traceback (most recent call last):
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files\Python38-32\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\missi\app-portfolio\carwashmgr\dashboard\views.py", line 30, in stockspage
+    agent_activity.delay( 'super user', 'All', 'Read operation' )
+  File "C:\Program Files\Python38-32\lib\site-packages\celery\app\task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "C:\Program Files\Python38-32\lib\site-packages\celery\app\task.py", line 530, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: agent_activity() missing 1 required positional argument: 'operation'
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@LAPTOP-LAUN9TI6', 'copyright': 'Copyright (c) 2007-2020 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.3', 'product': 'RabbitMQ', 'version': '3.8.4'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+using channel_id: 1
+Channel open
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+C:\Users\missi\app-portfolio\carwashmgr\carwashmgr\__init__.py changed, reloading.
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Using proactor: IocpProactor
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/01.png
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\__init__.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@LAPTOP-LAUN9TI6', 'copyright': 'Copyright (c) 2007-2020 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.3', 'product': 'RabbitMQ', 'version': '3.8.4'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+using channel_id: 1
+Channel open
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\carwashmgr\settings.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\dashboard\celery_tasks.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@LAPTOP-LAUN9TI6', 'copyright': 'Copyright (c) 2007-2020 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.3', 'product': 'RabbitMQ', 'version': '3.8.4'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+using channel_id: 1
+Channel open
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/01.png
+Closed channel #1
+Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@LAPTOP-LAUN9TI6', 'copyright': 'Copyright (c) 2007-2020 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.3', 'product': 'RabbitMQ', 'version': '3.8.4'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+using channel_id: 1
+Channel open
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@LAPTOP-LAUN9TI6', 'copyright': 'Copyright (c) 2007-2020 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.3', 'product': 'RabbitMQ', 'version': '3.8.4'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+using channel_id: 1
+Channel open
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+Using proactor: IocpProactor
+Visit me at http://localhost:5555
+Broker: amqp://guest:**@localhost:5672//
+Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'dashboard.celery_tasks.agent_activity']
+Settings: {'cookie_secret': b'GnxcZKZURdeO3wBV6aM4QIOoYcbUEUqviyGEvIGZeGc=',
+ 'debug': False,
+ 'login_url': '/login',
+ 'static_path': 'c:\\program '
+                'files\\python38-32\\lib\\site-packages\\flower\\static',
+ 'static_url_prefix': '/static/',
+ 'template_path': 'c:\\program '
+                  'files\\python38-32\\lib\\site-packages\\flower\\templates'}
+Watching for file changes with StatReloader
+Closed channel #1
+Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@LAPTOP-LAUN9TI6', 'copyright': 'Copyright (c) 2007-2020 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.3', 'product': 'RabbitMQ', 'version': '3.8.4'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+using channel_id: 1
+Channel open
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\carwashmgr\settings.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\missi\app-portfolio\carwashmgr\carwashmgr\settings.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Using proactor: IocpProactor
+Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@LAPTOP-LAUN9TI6', 'copyright': 'Copyright (c) 2007-2020 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.3', 'product': 'RabbitMQ', 'version': '3.8.4'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+using channel_id: 1
+Channel open
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Closed channel #1
+Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@LAPTOP-LAUN9TI6', 'copyright': 'Copyright (c) 2007-2020 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.3', 'product': 'RabbitMQ', 'version': '3.8.4'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+using channel_id: 1
+Channel open
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+C:\Users\missi\app-portfolio\carwashmgr\carwashmgr\settings.py changed, reloading.
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@LAPTOP-LAUN9TI6', 'copyright': 'Copyright (c) 2007-2020 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.3', 'product': 'RabbitMQ', 'version': '3.8.4'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+using channel_id: 1
+Channel open
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/avatar.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/avatar.png
+Not Found: /images/demo/backgrounds/01.png
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Using proactor: IocpProactor
+Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@LAPTOP-LAUN9TI6', 'copyright': 'Copyright (c) 2007-2020 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.3', 'product': 'RabbitMQ', 'version': '3.8.4'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+using channel_id: 1
+Channel open
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png
+Not Found: /images/demo/backgrounds/01.png
+Not Found: /images/demo/backgrounds/02.png

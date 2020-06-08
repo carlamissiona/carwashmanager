@@ -7,6 +7,7 @@ from dashboard.models import Sales,StockItem
 # def cart_add(request, product_id): 
 
 import logging  
+from .celery_tasks import agent_activity
 from django.views import View
 # Create your views here.
 def indexpage(request):
@@ -25,5 +26,6 @@ def listsalespage(request):
     return render(request, 'listsales.html', {'html': "page_title - home", 'sales' : sales  })
 
 def stockspage(request):  
-    stocks =StockItem.objects.all().order_by('-pub_date')[:12] 
+    stocks = StockItem.objects.all().order_by('-pub_date')[:12] 
+    agent_activity.delay( 'super user', 'All', 'Read operation' ) 
     return render(request, 'stocks.html', {'html': "page_title - home", 'stocks' : stocks  })      

@@ -131,6 +131,8 @@ STATICFILES_DIRS = (
 )
 
 
+CELERY_BROKER_URL = 'amqp://guest:guest@localhost'
+
 
 # DataFlair #Logging Information
 LOGGING = {
@@ -153,6 +155,10 @@ LOGGING = {
     # Loggers ####################################################################
     'loggers': {
        '': {
+            'level': 'DEBUG',
+            'handlers': ['console', 'file']
+        },
+        '/inventory': {
             'level': 'DEBUG',
             'handlers': ['console', 'file']
         },
