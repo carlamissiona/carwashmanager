@@ -1,16 +1,18 @@
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404
 from django.http import HttpResponse,HttpResponseRedirect 
 from dashboard.models import Sales,StockItem 
 import logging  
 from django.views import View
 # Create your views here.
-def indexpage(request):  
+def indexpage(request):
     sales = Sales.objects.all().order_by('-pub_date')[:12] 
     return render(request, 'index.html', {'html': "page_title - home", 'sales' : sales  }) 
  
 def salespage(request,salesid):  
  	# logging.warning(request) 
-    ses = Sales.objects.get(id=salesid)  
+    # ses = Sales.objects.get(id=salesid)
+    ses = get_object_or_404(Sales,
+                            id=salesid )
     return render(request, 'salespage.html', {'html': salesid, 'sales':ses })  
 
 def listsalespage(request):  
