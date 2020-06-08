@@ -1,6 +1,11 @@
 from django.shortcuts import render,get_object_or_404
 from django.http import HttpResponse,HttpResponseRedirect 
-from dashboard.models import Sales,StockItem 
+from dashboard.models import Sales,StockItem
+
+# # from django.views.decorators.http import require_POST  -- use with decorator above methofd
+# @require_POST
+# def cart_add(request, product_id): 
+
 import logging  
 from django.views import View
 # Create your views here.
